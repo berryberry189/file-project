@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import test.fileproject.config.auth.dto.SessionUser;
-import test.fileproject.repository.UserRepository;
 
 import javax.servlet.http.HttpSession;
 
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class IndexController {
 
-    private final UserRepository userRepository;
     private final HttpSession httpSession;
 
     @GetMapping("/")
@@ -30,4 +28,5 @@ public class IndexController {
     public String admin(){
         return "admin";
     }
+
 }

@@ -42,7 +42,12 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+
+	// AWS s3
+	// https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-aws
+	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: '2.2.1.RELEASE'
 }
+
 
 test {
 	useJUnitPlatform()
